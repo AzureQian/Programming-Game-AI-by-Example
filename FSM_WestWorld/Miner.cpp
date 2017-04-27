@@ -3,7 +3,7 @@
 
 Miner::Miner(int id):BaseGameEntity(id), m_Location(shack), m_iGoldCarried(0), m_iMoneyInBank(0), m_iThirst(0), m_iFatigue(0), m_pCurrentState(GoHomeAndSleepTilRestored::Instance()){}
 
-void Miner::ChanegState(State* pNewState)
+void Miner::ChangeState(State* pNewState)
 {
 	assert(m_pCurrentState && pNewState);
 

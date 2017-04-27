@@ -15,36 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="BaseGameEntity.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Locations.h">
-      <Filter>头文件</Filter>
-    </ClCompile>
-    <ClCompile Include="EntityNames.h">
-      <Filter>头文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Miner.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="MinerOwnedStates.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BaseGameEntity.h">
+    <ClInclude Include="misc\ConsoleUtils.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="State.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Miner.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="MinerOwnedStates.h">
+    <ClInclude Include="misc\Utils.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

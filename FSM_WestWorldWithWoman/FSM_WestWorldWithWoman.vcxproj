@@ -19,11 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{7FDCA085-0B9E-41C3-832D-EBFD46835DF6}</ProjectGuid>
+    <ProjectGuid>{744CFC1D-EDB4-42D2-B393-030126A27E01}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>FSM_WestWorld</RootNamespace>
+    <RootNamespace>FSM_WestWorldWithWoman</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
-    <ProjectName>FSM_WestWorld1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -144,18 +143,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="BaseGameEntity.h" />
+    <ClInclude Include="EntityNames.h" />
+    <ClInclude Include="Locations.h" />
+    <ClInclude Include="Miner.h" />
+    <ClInclude Include="MinerOwnedStates.h" />
+    <ClInclude Include="MinersWife.h" />
+    <ClInclude Include="MinersWifeOwnedStates.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="StateMachine.h" />
+  </ItemGroup>
+  <ItemGroup>
     <ClCompile Include="BaseGameEntity.cpp" />
-    <ClCompile Include="EntityNames.h" />
-    <ClCompile Include="Locations.h" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Miner.cpp" />
     <ClCompile Include="MinerOwnedStates.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BaseGameEntity.h" />
-    <ClInclude Include="Miner.h" />
-    <ClInclude Include="MinerOwnedStates.h" />
-    <ClInclude Include="State.h" />
+    <ClCompile Include="MinersWife.cpp" />
+    <ClCompile Include="MinersWifeOwnedStates.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

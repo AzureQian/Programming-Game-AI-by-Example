@@ -5,8 +5,8 @@
 #include <cassert>
 #include "BaseGameEntity.h"
 #include "Locations.h"
-
-class State;
+#include "StateMachine.h"
+#include "MinerOwnedStates.h"
 
 const int ComfortLevel = 5;
 const int MaxNuggets = 3;
@@ -16,8 +16,9 @@ const int TirednessThreshold = 5;
 class Miner : public BaseGameEntity
 {
 private:
-	State*			m_pCurrentState;
 	
+	StateMachine<Miner>* m_pStateMachine;
+
 	location_type	m_Location;
 
 	int				m_iGoldCarried;
@@ -26,14 +27,20 @@ private:
 	int				m_iFatigue;
 
 public:
-	Miner(int id);
+	Miner(int id):BaseGameEntity(id), m_Location(shack), m_iGoldCarried(0), m_iMoneyInBank(0), m_iThirst(0), m_iFatigue(0)
+	{
+		m_pStateMachine = new StateMachine<Miner>(this);
+
+		m_pStateMachine->SetCurrentState(GoHomeAndSleepTilRestored::Instance());
+	};
+
+	~Miner() { delete m_pStateMachine; }
 
 	void Update();
 
-	void ChangeState(State* new_state);
+	StateMachine<Miner>* GetFSM() const { return m_pStateMachine; }
 
 	location_type	Location() const { return m_Location; }
-
 
 	void			ChangeLocation(const location_type loc) { m_Location = loc; }
 
