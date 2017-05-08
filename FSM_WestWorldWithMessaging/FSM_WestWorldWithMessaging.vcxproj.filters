@@ -13,22 +13,10 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="头文件\messaging">
-      <UniqueIdentifier>{8b1bda68-99af-42ce-9409-9b208f7c9611}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\misc">
-      <UniqueIdentifier>{eecd201e-c10a-4ac8-a150-1f76d0f3431f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Telegram.h">
-      <Filter>头文件\messaging</Filter>
-    </ClInclude>
-    <ClInclude Include="misc\ConsoleUtils.h">
-      <Filter>头文件\misc</Filter>
-    </ClInclude>
-    <ClInclude Include="misc\Utils.h">
-      <Filter>头文件\misc</Filter>
+    <ClInclude Include="BaseGameEntity.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

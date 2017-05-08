@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FSM_WestWorldWithWoman", "F
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Common", "Common\Common.vcxproj", "{D0FD5EE7-2F4C-40D2-956E-C8AA11BBCEC8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FSM_WestWorldWithMessaging", "FSM_WestWorldWithMessaging\FSM_WestWorldWithMessaging.vcxproj", "{1525A3B1-B193-4FB2-8AF7-D66DF857DE6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{D0FD5EE7-2F4C-40D2-956E-C8AA11BBCEC8}.Release|x64.Build.0 = Release|x64
 		{D0FD5EE7-2F4C-40D2-956E-C8AA11BBCEC8}.Release|x86.ActiveCfg = Release|Win32
 		{D0FD5EE7-2F4C-40D2-956E-C8AA11BBCEC8}.Release|x86.Build.0 = Release|Win32
+		{1525A3B1-B193-4FB2-8AF7-D66DF857DE6D}.Debug|x64.ActiveCfg = Debug|x64
+		{1525A3B1-B193-4FB2-8AF7-D66DF857DE6D}.Debug|x64.Build.0 = Debug|x64
+		{1525A3B1-B193-4FB2-8AF7-D66DF857DE6D}.Debug|x86.ActiveCfg = Debug|Win32
+		{1525A3B1-B193-4FB2-8AF7-D66DF857DE6D}.Debug|x86.Build.0 = Debug|Win32
+		{1525A3B1-B193-4FB2-8AF7-D66DF857DE6D}.Release|x64.ActiveCfg = Release|x64
+		{1525A3B1-B193-4FB2-8AF7-D66DF857DE6D}.Release|x64.Build.0 = Release|x64
+		{1525A3B1-B193-4FB2-8AF7-D66DF857DE6D}.Release|x86.ActiveCfg = Release|Win32
+		{1525A3B1-B193-4FB2-8AF7-D66DF857DE6D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
